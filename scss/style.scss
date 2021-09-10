@@ -1,0 +1,74 @@
+*{
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+::after,
+::before{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    box-sizing: border-box;
+}
+body{
+    padding: 40px 0px 0px 0px;
+    background-color: #777;
+    display: flex;
+}
+.card_rol{
+    padding: 0px 0px 10px 0px;
+    overflow: hidden;
+}
+.card_rol.active{
+    padding: 0px 0px 30px 0px;
+}
+.card_rol__content{
+    position: relative;
+    text-align: center;
+    background-color: rgb(231, 222, 222);
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 55px;
+    transition: .6s ease;
+}
+.card_rol__content.active{
+    height: 100%;
+}
+.card_rol.card_rol__content.header h1{
+    margin: 0px 0px 10px 0px;
+}
+.body_rol{
+    pointer-events: none;
+    margin: 30px 0px 0px 0px;
+    opacity: 0;
+    transition: .4s ease;
+}
+.card_rol__content.active .body_rol{
+    pointer-events:visible;
+    opacity: 1;
+}
+.body_rol-title{
+    margin: 0px 0px 5px 0px;
+}
+.card_rol__content--arrow{
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    width:20px;
+    height: 20px;
+    transform: translate(-50%);
+    background-color: rgb(231, 222, 222);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_rol__content--arrow{
+    cursor: pointer;
+}
+.card_rol__content--arrow img{
+    display: block;
+    width: 9px;
+    height: 9px;
+}
+
+
